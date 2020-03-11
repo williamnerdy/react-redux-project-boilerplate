@@ -3,7 +3,13 @@ import { shallow } from 'enzyme';
 import Link from './Link';
 
 describe('<Link />', () => {
+  let wrapper;
+
+  beforeEach(() => {
+    wrapper = shallow(<Link href="#">My link</Link>);
+  });
+
   it('Renders without crashing', () => {
-    shallow(<Link href="#">My link</Link>);
+    expect(wrapper).toMatchSnapshot();
   });
 });
