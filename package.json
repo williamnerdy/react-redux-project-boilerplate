@@ -28,6 +28,7 @@
     "customize-cra": "^0.9.1",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
     "http-proxy-middleware": "^1.0.1",
@@ -57,6 +58,9 @@
     "extends": "react-app"
   },
   "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
     "testMatch": [
       "**/*.steps.js"
     ],
