@@ -7,6 +7,7 @@ import Immutable from 'seamless-immutable';
 const { Types, Creators } = createActions(
   {
     load: ['id'],
+    exit: [],
     loadSuccess: []
   },
   { prefix: 'TODOS_' }
@@ -32,12 +33,19 @@ const loadSuccess = (state = INITIAL_STATE, action) => ({
   data: action.data
 });
 
+const exit = (state = INITIAL_STATE, action) => ({
+  ...state,
+  loading: false,
+  data: action.data
+});
+
 /**
  * Reducer
  */
 const reducer = createReducer(INITIAL_STATE, {
   [Types.LOAD]: load,
-  [Types.LOAD_SUCCESS]: loadSuccess
+  [Types.LOAD_SUCCESS]: loadSuccess,
+  [Types.EXIT]: exit
 });
 
 export { reducer, Types };
