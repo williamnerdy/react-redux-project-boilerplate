@@ -9,7 +9,6 @@
     "eject": "react-app-rewired eject",
     "lint:style": "stylelint src/**/*.scss",
     "lint:js": "eslint src/**/*.js"
-
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -31,6 +30,7 @@
     "enzyme-adapter-react-16": "^1.15.2",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
+    "http-proxy-middleware": "^1.0.1",
     "husky": "^4.2.1",
     "lint-staged": "^10.0.7",
     "prettier": "^1.19.1",
