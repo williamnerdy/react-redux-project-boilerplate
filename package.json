@@ -11,7 +11,7 @@
     "lint:js": "eslint src/**/*.js"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "connected-react-router": "^6.6.1",
     "history": "^4.10.1",
     "node-sass": "^4.13.1",
